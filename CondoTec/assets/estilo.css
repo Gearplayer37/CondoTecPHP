@@ -1,0 +1,242 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url(../assets/img/teste.png);
+    font-family: 'Courier New', Courier, monospace;
+    padding-top: 150px; /* Adicione um padding-top igual à altura do cabeçalho */
+    padding-bottom: 50px; /* Adicione um padding-bottom igual à altura do rodapé */
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: url(../assets/img/fundo.png) repeat-x;
+    padding-top: 20px;
+    z-index: 999; /* Garante que o cabeçalho fique acima do conteúdo */
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(50deg, #00a2e8, #47c8ff, #38bbf2);
+    color: #fff;
+    padding: 10px 0;
+    z-index: 999; /* Garante que o rodapé fique acima do conteúdo */
+}
+
+.margem_topo {
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+#topo ul li {
+    display: inline-block;
+}
+
+#topo ul li a {
+    color: white;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.branco {
+    color: white;
+}
+
+.caixa_geral {
+    background: #fff;
+    border-radius: 20px;
+    padding-bottom: 80px;
+    padding-top: 80px;
+    padding-left: 80px;
+    padding-right: 80px;
+    display: inline-block;
+    text-align: center;
+    margin-right: 20px;
+    box-shadow: 0 26px 58px 0 rgba(0, 0, 0, 0.22), 0 5px 14px 0 rgba(0, 0, 0, 0.18);
+}
+
+.mostrar_senha {
+    margin-left: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    outline: none;
+}
+
+.mostrar_senha .aberto,
+.mostrar_senha .fechado {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+}
+
+.mostrar_senha .aberto {
+    display: none;
+    background-image: url('../assets/img/aberto.png');
+}
+
+.mostrar_senha .fechado {
+    background-image: url('../assets/img/fechado.png');
+}
+
+.mostrar_senha.visible .aberto {
+    display: inline-block;
+}
+
+.mostrar_senha.visible .fechado {
+    display: none;
+}
+
+.cadastro_caixa {
+    margin-bottom: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+    background-color: #e5e7ea;
+    height: 50px;
+    padding: 10px;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.cadastro_caixa2 {
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 0px;
+    background-color: #e5e7ea;
+    height: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.cadastro_texto {
+    background: none;
+    border: 0;
+    outline: 0;
+    font-size: 16px;
+}
+
+.bnt_cadastro {
+    cursor: pointer;
+    padding: 0;
+    border-radius: 40px;
+    outline: none;
+    background: none;
+    border: 1px solid transparent;
+    width: 100px;
+    height: 50px;
+    color: white;
+    background-color: #00a2e8;
+}
+
+.bnt_cadastro2 {
+    cursor: pointer;
+    padding: 0;
+    border-radius: 40px;
+    outline: none;
+    background: none;
+    border: 1px solid transparent;
+    width: 100px;
+    height: 50px;
+    color: white;
+    background-color: #00a2e8;
+}
+
+.bnt_fazerCadastro {
+    cursor: pointer;
+    padding: 0;
+    border-radius: 40px;
+    background: none;
+    border: 1px #00a2e8;
+    width: 100px;
+    height: 50px;
+    color: #00a2e8;
+    background-color: white;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(50deg, #00a2e8, #47c8ff, #38bbf2);
+    color: #fff;
+    padding: 10px 0;
+    z-index: 999; /* Garante que o rodapé fique acima do conteúdo */
+}
+
+#roda {
+    color: white;
+    text-align: center;
+}
+
+.app {
+    margin-top: 30px;
+}
+
+.pagina {
+    position: relative;
+    margin-top: 100px;
+    border-radius: 5px;
+    background-color: #f3f3f3;
+    padding: 30px !important;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+li.list-group-item.active {
+    color: #000;
+    background-color: #fff;
+    border-color: #0078a8;
+    border-left: solid 10px #0078a8;
+}
+
+.list-group {
+    cursor: pointer;
+}
+
+li a {
+    color: #212529;
+}
+
+li a:hover {
+    text-decoration: none;
+}
+
+.menu.list-group-item {
+    background-color: #f3f3f3;
+    font-family: 'Courier New', Courier, monospace;
+    height: 150;
+}
+
+.container.app {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.container.conteudo {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.margem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.margem h1 {
+    text-align: center;
+    margin-top: 5px; 
+}
